@@ -1,0 +1,19 @@
+server:
+  port: 7777
+
+spring:
+  freemarker:
+    suffix: .html
+    request-context-attribute: request
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/any?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  mvc:
+    static-path-pattern: /static/**
