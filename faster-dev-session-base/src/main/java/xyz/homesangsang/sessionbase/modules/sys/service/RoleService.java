@@ -5,5 +5,7 @@ import xyz.homesangsang.sessionbase.modules.sys.entity.RoleEntity;
 import java.util.List;
 
 public interface RoleService {
+    List<RoleEntity> getRoleList();
+
     List<RoleEntity> getRoleListByUserId(String userId);
 }

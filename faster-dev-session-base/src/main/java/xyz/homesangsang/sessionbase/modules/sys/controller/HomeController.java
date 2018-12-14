@@ -42,4 +42,9 @@ public class HomeController {
     public String header() {
         return "header";
     }
+
+    @RequestMapping("/sys/role")
+    public String rolePage() {
+        return "modules/sys/role";
+    }
 }

@@ -18,6 +18,11 @@ public class RoleServiceImpl implements RoleService {
     @Autowired
     private UserRoleDao userRoleDao;
 
+    @Override
+    public List<RoleEntity> getRoleList() {
+        return roleDao.findAll();
+    }
+
     /**
      * 根据用户id,查询用户拥有角色
      * @param userId
